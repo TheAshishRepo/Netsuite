@@ -1,0 +1,36 @@
+<manifest projecttype="ACCOUNTCUSTOMIZATION">
+  <projectname>SDFv1.0</projectname>
+  <frameworkversion>1.0</frameworkversion>
+  <dependencies>
+    <features>
+      <feature required="false">CRM</feature>
+      <feature required="true">SERVERSIDESCRIPTING</feature>
+    </features>
+    <files>
+      <file>/SuiteScripts/AY APTO Integration/aptoUpsertRecordRESTlet.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoSalesTransactionLib.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoSearchLib.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoPayment.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoCreditMemo.js</file>
+      <file>/SuiteScripts/AY APTO Integration/math.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoPaymentApplyRESTlet.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoSalesTransactionsRESTlet.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoSalesTransaction.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoGetAdjPostingPeriodScript.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoSalesTransactionDefs.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoInvoice.js</file>
+      <file>/SuiteScripts/AY APTO Integration/moment.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoSearchScript.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoUpsertRecordLib.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoJE.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoEntitySearchRESTlet.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoSearchRecordRESTlet.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoPaymentRESTlet.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoGetAdjPostingPeriodRESTlet.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoModifyTransaction.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoCustomerRefund.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoSalesTransactionRESTlet.js</file>
+      <file>/SuiteScripts/AY APTO Integration/aptoVoidTransaction.js</file>
+    </files>
+  </dependencies>
+</manifest>

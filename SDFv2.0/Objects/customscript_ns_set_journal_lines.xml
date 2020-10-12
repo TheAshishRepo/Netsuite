@@ -1,0 +1,46 @@
+<clientscript scriptid="customscript_ns_set_journal_lines">
+  <description>On journals if if property or project selected set the client and customer - part of Allocation Script</description>
+  <fieldchangedfunction>fieldchanged</fieldchangedfunction>
+  <isinactive>F</isinactive>
+  <lineinitfunction></lineinitfunction>
+  <name>NS | CS | AS | Set Journal Lines</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <pageinitfunction>pageinit</pageinitfunction>
+  <postsourcingfunction></postsourcingfunction>
+  <recalcfunction></recalcfunction>
+  <saverecordfunction>saveRecord</saverecordfunction>
+  <scriptfile>[/SuiteBundles/Bundle 269014/NS_CS_Journal_SetLine_Client_Billto_vr3.js]</scriptfile>
+  <validatedeletefunction></validatedeletefunction>
+  <validatefieldfunction></validatefieldfunction>
+  <validateinsertfunction></validateinsertfunction>
+  <validatelinefunction>validateLine</validatelinefunction>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ns_ic_journal">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <executioncontext>ACTION|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DEBUGGER|EMAILCAPTURE|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PORTLET|PROMOTIONS|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKFLOW</executioncontext>
+      <isdeployed>F</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <recordtype>INTERCOMPANYJOURNALENTRY</recordtype>
+      <status>RELEASED</status>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_ns_cs_journal">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <executioncontext>ACTION|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DEBUGGER|EMAILCAPTURE|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PORTLET|PROMOTIONS|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WORKFLOW</executioncontext>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <recordtype>JOURNALENTRY</recordtype>
+      <status>RELEASED</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</clientscript>

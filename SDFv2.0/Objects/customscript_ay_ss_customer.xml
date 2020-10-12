@@ -1,0 +1,291 @@
+<scheduledscript scriptid="customscript_ay_ss_customer">
+  <description>Scheduled script to handle entity / subsidiary association</description>
+  <isinactive>F</isinactive>
+  <name>AY | SS | Customer</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/AY Scheduled Scripts/AY Bill To/ay_ss_customer_maintenance.js]</scriptfile>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscriptentityid">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth>40</displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>TEXT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Entity ID</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete></onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype></selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscriptentityscope">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth>40</displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>TEXT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Entity Scope</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete></onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype></selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscriptprimarysubid">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth>40</displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>TEXT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Primary Subsidiary ID</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete></onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype></selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscriptentitytype">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description>BILL TO or Vendor?</description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth></displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>TEXT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Entity Type</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete></onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype></selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ay_ss_customer2">
+      <custscriptentityid></custscriptentityid>
+      <custscriptentityscope></custscriptentityscope>
+      <custscriptentitytype></custscriptentitytype>
+      <custscriptprimarysubid></custscriptprimarysubid>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>AY | SS | MultiSub Customer 2</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2018-09-20</startdate>
+          <starttime>22:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_ay_ss_customer3">
+      <custscriptentityid></custscriptentityid>
+      <custscriptentityscope></custscriptentityscope>
+      <custscriptentitytype></custscriptentitytype>
+      <custscriptprimarysubid></custscriptprimarysubid>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>AY | SS | MultiSub Customer 3</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2018-09-20</startdate>
+          <starttime>22:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_ay_ss_customer4">
+      <custscriptentityid></custscriptentityid>
+      <custscriptentityscope></custscriptentityscope>
+      <custscriptentitytype></custscriptentitytype>
+      <custscriptprimarysubid></custscriptprimarysubid>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>AY | SS | MultiSub Customer 4</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2018-09-20</startdate>
+          <starttime>22:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_ay_ss_customer5">
+      <custscriptentityid></custscriptentityid>
+      <custscriptentityscope></custscriptentityscope>
+      <custscriptentitytype></custscriptentitytype>
+      <custscriptprimarysubid></custscriptprimarysubid>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>AY | SS | MultiSub Customer 5</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2018-09-20</startdate>
+          <starttime>22:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_ay_ss_vendor5">
+      <custscriptentityid></custscriptentityid>
+      <custscriptentityscope></custscriptentityscope>
+      <custscriptentitytype></custscriptentitytype>
+      <custscriptprimarysubid></custscriptprimarysubid>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>AY | SS | MultiSub Vendor 5</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2018-10-11</startdate>
+          <starttime>22:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_ay_ss_vendor4">
+      <custscriptentityid></custscriptentityid>
+      <custscriptentityscope></custscriptentityscope>
+      <custscriptentitytype></custscriptentitytype>
+      <custscriptprimarysubid></custscriptprimarysubid>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>AY | SS | MultiSub Vendor 4</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2018-10-11</startdate>
+          <starttime>22:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_ay_ss_customer1">
+      <custscriptentityid></custscriptentityid>
+      <custscriptentityscope></custscriptentityscope>
+      <custscriptentitytype></custscriptentitytype>
+      <custscriptprimarysubid></custscriptprimarysubid>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>AY | SS | MultiSub Customer 1</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2018-09-20</startdate>
+          <starttime>22:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_ay_ss_vendor1">
+      <custscriptentityid></custscriptentityid>
+      <custscriptentityscope></custscriptentityscope>
+      <custscriptentitytype></custscriptentitytype>
+      <custscriptprimarysubid></custscriptprimarysubid>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>AY | SS | MultiSub Vendor 1</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2018-10-11</startdate>
+          <starttime>22:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_ay_ss_vendor2">
+      <custscriptentityid></custscriptentityid>
+      <custscriptentityscope></custscriptentityscope>
+      <custscriptentitytype></custscriptentitytype>
+      <custscriptprimarysubid></custscriptprimarysubid>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>AY | SS | MultiSub Vendor 2</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2018-10-11</startdate>
+          <starttime>22:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_ay_ss_vendor3">
+      <custscriptentityid></custscriptentityid>
+      <custscriptentityscope></custscriptentityscope>
+      <custscriptentitytype></custscriptentitytype>
+      <custscriptprimarysubid></custscriptprimarysubid>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>AY | SS | MultiSub Vendor 3</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2018-10-11</startdate>
+          <starttime>22:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

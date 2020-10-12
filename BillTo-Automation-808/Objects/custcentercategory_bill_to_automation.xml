@@ -1,0 +1,19 @@
+<centercategory scriptid="custcentercategory_bill_to_automation">
+  <center>BASIC</center>
+  <centertab>BASICCENTERCUSTOMIZATION</centertab>  
+  <label>Bill To Automation</label>
+  <links>
+    <link> 
+      <linklabel>Configure Zendesk Credentials</linklabel>  
+      <linkobject>[scriptid=customscript_ay_su_generate_guid.customdeploy_ay_su_generate_guid]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Create Bill To Client</linklabel>
+      <linkobject>[scriptid=customscript_ay_mr_fetch_zd_data]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

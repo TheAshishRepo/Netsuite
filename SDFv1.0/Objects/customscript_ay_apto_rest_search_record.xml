@@ -1,0 +1,50 @@
+<restlet scriptid="customscript_ay_apto_rest_search_record">
+  <deletefunction></deletefunction>
+  <description></description>
+  <getfunction></getfunction>
+  <isinactive>F</isinactive>
+  <name>aptoSearchRecordRESTlet-285329</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <postfunction>postRESTlet</postfunction>
+  <putfunction></putfunction>
+  <scriptfile>[/SuiteScripts/AY APTO Integration/aptoSearchRecordRESTlet.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ay_apto_search_record">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>RELEASED</status>
+      <title>aptoSearchRecordRESTlet</title>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy2">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>F</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>TESTING</status>
+      <title>aptoSearchRecordRESTlet 2</title>
+    </scriptdeployment>
+  </scriptdeployments>
+  <libraries>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/aptoSearchScript.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/aptoGetAdjPostingPeriodScript.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/aptoSalesTransactionDefs.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/aptoSalesTransactionLib.js]</scriptfile>
+    </library>
+  </libraries>
+</restlet>

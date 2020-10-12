@@ -1,0 +1,104 @@
+<manifest projecttype="ACCOUNTCUSTOMIZATION">
+  <projectname>SDFv2.0</projectname>
+  <frameworkversion>1.0</frameworkversion>
+  <dependencies>
+    <features>
+      <feature required="false">WEBSERVICES</feature>
+      <feature required="false">IPADDRESSRULES</feature>
+      <feature required="false">CRM</feature>
+      <feature required="true">SERVERSIDESCRIPTING</feature>
+    </features>
+    <objects>
+      <object>customrecord_flo_change_log</object>
+      <object>customrecord_flo_permission_level</object>
+      <object>customrecord_2663_bill_eft_details</object>
+      <object>customrecord_flo_customization</object>
+      <object>customrecord_fam_assetregisterrepline</object>
+      <object>customrecord_2663_payment_schedule</object>
+      <object>customrecord_fam_report_template</object>
+      <object>customrecord_ncfar_transferaccounts</object>
+      <object>customrecord_ecsl_audit_trail_dtl</object>
+      <object>customrecord_fam_papersize</object>
+      <object>customrecord_ncfar_altmethods</object>
+      <object>customrecord_tax_cache</object>
+      <object>customrecord_2663_execution_log</object>
+      <object>customrecord_fam_deprschedreport</object>
+      <object>customrecord_bg_queueinstance</object>
+      <object>customrecord_client</object>
+      <object>customrecord_ncfar_deprmethod</object>
+      <object>customrecord_fam_assetsummaryrepline</object>
+      <object>customrecord_flo_permission</object>
+      <object>customrecord_payment_allocation_type</object>
+      <object>customrecord_ncfar_expenseincome</object>
+      <object>customrecord_taf_configuration</object>
+      <object>customrecord_2663_batch</object>
+      <object>customrecord_tax_template</object>
+      <object>customrecord_bg_procinstance</object>
+      <object>customrecord_ecsl_audit_trail_hdr</object>
+      <object>customrecord_fam_report</object>
+      <object>customrecord_ncfar_assettype</object>
+      <object>customrecord_ncfar_assetproposal</object>
+      <object>customrecord_taf_setupconfig_value</object>
+      <object>customrecord_flo_field_references</object>
+      <object>customrecord_2663_format_details</object>
+      <object>customrecord_2663_queue_settings</object>
+      <object>customrecord_ncfar_altdeprdef</object>
+      <object>customrecord_fam_tpaf_mapping</object>
+      <object>customrecord_fam_assetvalues</object>
+      <object>customrecord_tax_field_notation</object>
+      <object>customrecord_taf_rep_config</object>
+      <object>customrecord_2663_batch_details</object>
+      <object>customrecord_tax_form</object>
+      <object>customrecord_fam_assetregisterrep</object>
+      <object>customrecord_fam_deprmonthreportline</object>
+      <object>customrecord_ncfar_asset</object>
+      <object>customrecord_template_content</object>
+      <object>customrecord_ncfar_assetusage</object>
+      <object>customrecord_fam_deprschedreportline</object>
+      <object>customrecord_2663_payment_file_format</object>
+      <object>customrecord_fam_assetresetdata</object>
+      <object>customrecord_2663_bank_details</object>
+      <object>customrecord_ncfar_systemsetup</object>
+      <object>customrecord_tax_cache_detail</object>
+      <object>customrecord_2663_entity_bank_details</object>
+      <object>customrecord_fam_assetsummaryrep</object>
+      <object>customrecord_2663_dummy_list</object>
+      <object>customrecord_2663_file_admin</object>
+      <object>customrecord_ncfar_deprhistory</object>
+      <object>customrecord_template_attachment</object>
+      <object>customrecord_tax_report_map</object>
+      <object>customrecord_tax_report_map_option</object>
+      <object>customrecord_2663_payment_aggregation</object>
+      <object>customrecord_12194_file_template_request</object>
+      <object>customrecord_vatonline_detail</object>
+      <object>customrecord_permission_level_map</object>
+      <object>customrecord_2663_approval_routing</object>
+      <object>customrecord_ncfar_altdepr_proposal</object>
+      <object>customrecord_2663_batch_transaction_info</object>
+      <object>customrecord_tax_return_setup_item</object>
+      <object>customrecord_ep_company_information</object>
+      <object>customrecord_ncfar_altdepreciation</object>
+      <object>customrecord_ep_preference</object>
+      <object>customrecord_assetlifetimes</object>
+      <object>customrecord_bg_summaryrecord</object>
+      <object>customrecord_fam_process</object>
+      <object>customrecord_flo_process</object>
+      <object>customrecord_vatonline_submittedperiod</object>
+      <object>customrecord_ep_proc_results</object>
+      <object>customrecord_tax_field</object>
+      <object>customrecord_cpro_dv_integration_setup</object>
+      <object>customrecord_bg_proclog</object>
+      <object>customrecord_2663_bill_eft_payment</object>
+    </objects>
+    <files>
+      <file>/SuiteBundles/Bundle 269014/NS_CS_SetLine_Client_Billto_vr4.js</file>
+      <file>/SuiteBundles/Bundle 269014/NS_CS_Disable_Inv_CM_Fields_Vr3.js</file>
+      <file>/SuiteBundles/Bundle 269014/NS_CS_Journal_SetLine_Client_Billto_vr3.js</file>
+      <file>/SuiteScripts/AY Record Events Scripts/vendor/ay_ue_vendor.js</file>
+      <file>/SuiteScripts/AY Record Events Scripts/customer/ay_ue_customer.js</file>
+      <file>/SuiteScripts/AY Scheduled Scripts/AY Bill To/ay_ss_customer_maintenance.js</file>
+      <file>/SuiteScripts/ay_map_reduce_subsidiary_upsert.js</file>
+      <file>/SuiteScripts/AY Scheduled Scripts/AY Bill To/ay_map_reduce_customer.js</file>
+    </files>
+  </dependencies>
+</manifest>

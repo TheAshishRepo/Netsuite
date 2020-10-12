@@ -1,0 +1,61 @@
+<restlet scriptid="customscript_ay_apto_rest_brock_trans">
+  <deletefunction>deleteRESTlet</deletefunction>
+  <description>Process one APTO sales transaction </description>
+  <getfunction></getfunction>
+  <isinactive>F</isinactive>
+  <name>aptoSalesTransactionRESTlet-285329</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <postfunction>postRESTlet</postfunction>
+  <putfunction>putRESTlet</putfunction>
+  <scriptfile>[/SuiteScripts/AY APTO Integration/aptoSalesTransactionRESTlet.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ay_apto_brock_trans">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>RELEASED</status>
+      <title>aptoSalesTransaction</title>
+    </scriptdeployment>
+  </scriptdeployments>
+  <libraries>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/aptoSalesTransactionDefs.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/aptoSalesTransactionLib.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/aptoInvoice.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/aptoVoidTransaction.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/aptoCreditMemo.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/aptoJE.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/aptoSalesTransaction.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/aptoModifyTransaction.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/math.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/aptoGetAdjPostingPeriodScript.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/moment.js]</scriptfile>
+    </library>
+  </libraries>
+</restlet>

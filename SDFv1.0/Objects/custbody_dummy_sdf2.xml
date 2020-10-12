@@ -1,0 +1,7 @@
+<transactionbodycustomfield scriptid="custbody_dummy_sdf2">
+    <accesslevel>2</accesslevel>
+    <displaytype>NORMAL</displaytype>
+    <fieldtype>TEXT</fieldtype>
+    <label>DUMMY SDF TEST-2 1234567890123</label> 
+    <storevalue>T</storevalue>
+</transactionbodycustomfield>

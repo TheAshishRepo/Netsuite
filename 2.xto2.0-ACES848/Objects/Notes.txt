@@ -1,0 +1,18 @@
+------------------------
+Files that will be moved[They are in this Folder]
+------------------------
+ay_ue_customer.js
+ay_ss_customer_maintenance.js
+ay_ue_customer_new.js 
+AY Trust SS.js
+
+-----------------------------------
+Files that can not be moved [these will be moved manually]
+-----------------------------------
+Accoung Periods SS Script.js
+AY _ CS _ Vendor Bill.js
+AY _ UE _ Allocation Batch Process.js
+AY _ UE _ Apto Integration Errors.js
+AY Acct Period UE Script.js
+AY JE C Script.js
+AY JE UE Script.js

@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_ay_su_generate_guid">
+  <description>Suitelet to generate a GUID for encrypting Zendesk credentials used for Bill To Automation</description>
+  <isinactive>F</isinactive>
+  <name>AY SU Generate GUID</name>       
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/AY Bill To Automation/ay_su_generate_guid.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ay_su_generate_guid">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>F</allroles>
+      <audslctrole>ADMINISTRATOR</audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>AY SU Generate GUID Deploy</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

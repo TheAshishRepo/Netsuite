@@ -1,0 +1,82 @@
+<mapreducescript scriptid="customscript_mr_update_subs">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>AY | MR | Update Subsidiaries</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/ay_map_reduce_subsidiary_upsert.js]</scriptfile>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_record_type_mr">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth>40</displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>TEXT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Record Type</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete></onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype></selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy2">
+      <buffersize>4</buffersize>
+      <concurrencylimit>4</concurrencylimit>
+      <custscript_record_type_mr>vendor</custscript_record_type_mr>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <queueallstagesatonce>T</queueallstagesatonce>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>SCHEDULED</status>
+      <title>AY | MR | Update Subsidiaries[Vendor]</title>
+      <yieldaftermins>60</yieldaftermins>
+      <recurrence>
+        <daily>
+          <enddate></enddate>
+          <everyxdays>1</everyxdays>
+          <repeat></repeat>
+          <startdate>2019-11-18</startdate>
+          <starttime>05:00:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy1">
+      <buffersize>4</buffersize>
+      <concurrencylimit>4</concurrencylimit>
+      <custscript_record_type_mr>customer</custscript_record_type_mr>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <queueallstagesatonce>T</queueallstagesatonce>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>SCHEDULED</status>
+      <title>AY | MR | Update Subsidiaries[Bill To]</title>
+      <yieldaftermins>60</yieldaftermins>
+      <recurrence>
+        <daily>
+          <enddate></enddate>
+          <everyxdays>1</everyxdays>
+          <repeat></repeat>
+          <startdate>2019-11-18</startdate>
+          <starttime>05:00:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</mapreducescript>

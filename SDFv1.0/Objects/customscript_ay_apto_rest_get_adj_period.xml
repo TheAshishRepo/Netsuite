@@ -1,0 +1,40 @@
+<restlet scriptid="customscript_ay_apto_rest_get_adj_period">
+  <deletefunction></deletefunction>
+  <description></description>
+  <getfunction></getfunction>
+  <isinactive>F</isinactive>
+  <name>aptoGetAdjPostingPeriodRESTlet-285329</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <postfunction>postRESTlet</postfunction>
+  <putfunction></putfunction>
+  <scriptfile>[/SuiteScripts/AY APTO Integration/aptoGetAdjPostingPeriodRESTlet.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ay_apto_get_adj_period">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>RELEASED</status>
+      <title>aptoGetAdjPostingPeriodRESTlet</title>
+    </scriptdeployment>
+  </scriptdeployments>
+  <libraries>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/aptoGetAdjPostingPeriodScript.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/aptoSalesTransactionDefs.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/aptoSalesTransactionLib.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteScripts/AY APTO Integration/moment.js]</scriptfile>
+    </library>
+  </libraries>
+</restlet>
