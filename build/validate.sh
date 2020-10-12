@@ -21,8 +21,8 @@ then
 	pwd
 	echo 'Switching to origin/'$BITBUCKET_TARGET_BRANCH
 	git checkout -f origin/$BITBUCKET_TARGET_BRANCH
-	echo 'Merging Source branch ('origin/$GIT_BRANCH') into Target branch ('origin/$BITBUCKET_TARGET_BRANCH')'
-	git merge --no-commit --no-ff origin/$GIT_BRANCH
+	echo 'Merging Source branch ('$GIT_BRANCH') into Target branch ('origin/$BITBUCKET_TARGET_BRANCH')'
+	git merge --no-commit --no-ff $GIT_BRANCH
 	echo 'Merged. Looking for conflicts'
 	git ls-files -u | awk '{$1=$2=$3=""; print $0}' | awk '{ sub(/^[ \t]+/, ""); print }' | sort -u > conflicts.txt
 	if [ -s conflicts.txt ]
