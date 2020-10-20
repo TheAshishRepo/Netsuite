@@ -22,7 +22,7 @@ then
 	echo 'Switching to origin/'${ghprbTargetBranch}
 	git checkout -f origin/${ghprbTargetBranch}
 	echo 'Merging Source branch ('origin/${ghprbSourceBranch}') into Target branch ('origin/${ghprbTargetBranch}')'
-	git merge --no-commit --no-ff ${ghprbSourceBranch}
+	git merge --no-commit --no-ff origin/${ghprbSourceBranch}
 	echo 'Merged. Looking for conflicts'
 	git ls-files -u | awk '{$1=$2=$3=""; print $0}' | awk '{ sub(/^[ \t]+/, ""); print }' | sort -u > conflicts.txt
 	if [ -s conflicts.txt ]
