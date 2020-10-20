@@ -16,13 +16,13 @@ then
 	javac ObjectFileDOMParser.java
 	javac DD.java
 	echo 'Starting git diff'
-	echo 'Source Branch' $GIT_BRANCH
-	echo 'Target Branch' $BITBUCKET_TARGET_BRANCH
+	echo 'Source Branch' origin/${ghprbSourceBranch}
+	echo 'Target Branch' origin/${ghprbTargetBranch}
 	pwd
-	echo 'Switching to origin/'$BITBUCKET_TARGET_BRANCH
-	git checkout -f origin/$BITBUCKET_TARGET_BRANCH
-	echo 'Merging Source branch ('$GIT_BRANCH') into Target branch ('origin/$BITBUCKET_TARGET_BRANCH')'
-	git merge --no-commit --no-ff $GIT_BRANCH
+	echo 'Switching to origin/'${ghprbTargetBranch}
+	git checkout -f origin/${ghprbTargetBranch}
+	echo 'Merging Source branch ('origin/${ghprbSourceBranch}') into Target branch ('origin/${ghprbTargetBranch}')'
+	git merge --no-commit --no-ff ${ghprbSourceBranch}
 	echo 'Merged. Looking for conflicts'
 	git ls-files -u | awk '{$1=$2=$3=""; print $0}' | awk '{ sub(/^[ \t]+/, ""); print }' | sort -u > conflicts.txt
 	if [ -s conflicts.txt ]
