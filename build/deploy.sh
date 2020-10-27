@@ -14,9 +14,9 @@ if [ "$DEPLOY_ALL" == "NO" ]
 then
 	javac ObjectFileDOMParser.java
 	javac DD.java
-	echo 'Source Branch' $BITBUCKET_SOURCE_BRANCH
-	echo 'Target Branch' $BITBUCKET_TARGET_BRANCH
-	git checkout -f origin/$BITBUCKET_TARGET_BRANCH
+	echo 'Source Branch' origin/${ghprbSourceBranch}
+	echo 'Target Branch' origin/${ghprbTargetBranch}
+	git checkout -f origin/${ghprbTargetBranch}
 	#git diff --name-only HEAD~1 > changes.txt
 	git diff --name-only HEAD^ > changes.txt
 	cat changes.txt
